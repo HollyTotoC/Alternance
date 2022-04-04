@@ -20,13 +20,8 @@ class __TwigTemplate_b63212fd374db0ef5396d393f21f6fd8 extends Twig_Template
 <html lang=\"fr\">
 <head>
     <title>Théo 1</title>
-
     <link rel=\"stylesheet\" href=\"";
-        // line 6
-        echo twig_escape_filter($this->env, $this->getAttribute((isset($context["f3"]) ? $context["f3"] : null), "path"), "html", null, true);
-        echo "ui/imi/css/animate.css\" type=\"text/css\"/>
-    <link rel=\"stylesheet\" href=\"";
-        // line 7
+        // line 5
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["f3"]) ? $context["f3"] : null), "path"), "html", null, true);
         echo "project/example/css/theo.css\" type=\"text/css\"/>
 </head>
@@ -34,7 +29,7 @@ class __TwigTemplate_b63212fd374db0ef5396d393f21f6fd8 extends Twig_Template
 <body>
 
 <div >
-    <h1 >in the Air!</h1>
+    <h1 >Hello World !</h1>
 </div>
 
 </body>
@@ -53,6 +48,6 @@ class __TwigTemplate_b63212fd374db0ef5396d393f21f6fd8 extends Twig_Template
 
     public function getDebugInfo()
     {
-        return array (  28 => 7,  24 => 6,  17 => 1,);
+        return array (  23 => 5,  17 => 1,);
     }
 }
