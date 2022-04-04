@@ -1,0 +1,43 @@
+Les grid est un système de de grille (row collumns) et de contenaire afin d'ligner et organiser du contenue
+sur une vue (page html par exemple)
+
+ex: 
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+      One of three columns
+    </div>
+    <div class="col-sm">
+      One of three columns
+    </div>
+    <div class="col-sm">
+      One of three columns
+    </div>
+  </div>
+</div>
+
+- container pour centrer et le padding (espace entre deux éléments), .container pour du pixel responsive
+- 12 colonne possible par range (grace a flexbox la taille s'adapter), 
+- width s'exprime en pourcentage et se comporte donc re rapport a leur élément parent
+- chaque colone a un padding par default mais il peut etre enlevé tout comme celui des rangs avec .no-gutters sur .row
+- responsive breakpoint : il y en a 5 pour rendre une grille responsive (sm, m, l ,xl)
+
+nouvelle ligne avec <div class="w-100"></div>
+
+Alignment
+  Vertical alignment
+    <div class="row align-items-start">
+    <div class="row align-items-center">
+    <div class="row align-items-end">
+ou
+    <div class="col align-self-start">
+    <div class="col align-self-center">
+    <div class="col align-self-end">
+
+  Horizontal alignment
+    <div class="row justify-content-start">
+    <div class="row justify-content-center">
+    <div class="row justify-content-end">
+    <div class="row justify-content-around">
+    <div class="row justify-content-between">
+  

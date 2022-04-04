@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Created by PhpStorm.
  * User: nicolasdelourme
@@ -24,21 +25,23 @@ header("Access-Control-Allow-Methods: PUT, POST, GET, OPTIONS, DELETE");
  *
  */
 
-$f3->route('GET /', function($f3) {
+$f3->route(
+    'GET /',
+    function ($f3) {
         // on charge ici le twig.
         $twig = $GLOBALS['twig'];
 
         // cette méthode appelle la vue.
         // pour du html classique, faire echo '[chemin de la vue]';
-        echo $twig->render('home.html.twig',array('f3'=>$f3));
+        echo $twig->render('home.html.twig', array('f3' => $f3));
     }
 );
 
 
 /******************* PAGES D'ERREUR *************************/
 
-$f3->set('ONERROR', function($f3) {
-    if ($f3->get('ERROR.code')==404) {
+$f3->set('ONERROR', function ($f3) {
+    if ($f3->get('ERROR.code') == 404) {
         $twig = $GLOBALS['twig'];
         echo $twig->render('404.html.twig');
     }
